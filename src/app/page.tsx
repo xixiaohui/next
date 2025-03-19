@@ -1,6 +1,8 @@
 "use client"; // 由于使用客户端动画，添加此指令
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import  CustomButton  from "@/components/CustomButton";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Home() {
@@ -29,9 +31,7 @@ export default function Home() {
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
         >
-          <Button size="lg" className="mt-6 bg-primary text-white">
-            Get Started
-          </Button>
+          <CustomButton />
         </motion.div>
       </section>
 
