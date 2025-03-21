@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
+import ProductComparisonChart from "@/components/ProductComparisonChart";
+
 export default function Pricing() {
   return (
     <div className="container mx-auto py-16">
@@ -15,7 +17,8 @@ export default function Pricing() {
             <Button className="mt-4 w-full">Choose Plan</Button>
           </CardContent>
         </Card>
-        {/* 更多定价卡片 */}
+        
+        <ProductComparisonChart/>
       </div>
     </div>
   );
