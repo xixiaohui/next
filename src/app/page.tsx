@@ -1,9 +1,9 @@
 "use client"; // 由于使用客户端动画，添加此指令
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+
 import  CustomButton  from "@/components/CustomButton";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import ProductLists from "@/components/ProductsLists"
 
 export default function Home() {
   return (
@@ -35,58 +35,8 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Bento Grid Features */}
-      <section className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
-        <motion.div
-          whileHover={{ scale: 1.03, y: -5 }}
-          transition={{ duration: 0.3 }}
-          className="md:col-span-2 md:row-span-2"
-        >
-          <Card>
-            <CardHeader>
-              <CardTitle>Powerful Features</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600">
-                Unlock a suite of tools designed to scale your business effortlessly.
-              </p>
-              <Button variant="link" className="mt-4 p-0">
-                Learn More
-              </Button>
-            </CardContent>
-          </Card>
-        </motion.div>
-        <motion.div whileHover={{ scale: 1.03, y: -5 }} transition={{ duration: 0.3 }}>
-          <Card className="md:col-span-2">
-            <CardHeader>
-              <CardTitle>Fast Performance</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>Optimized with Next.js for blazing-fast load times.</p>
-            </CardContent>
-          </Card>
-        </motion.div>
-        <motion.div whileHover={{ scale: 1.03, y: -5 }} transition={{ duration: 0.3 }}>
-          <Card>
-            <CardHeader>
-              <CardTitle>Scalable</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>Grow without limits.</p>
-            </CardContent>
-          </Card>
-        </motion.div>
-        <motion.div whileHover={{ scale: 1.03, y: -5 }} transition={{ duration: 0.3 }}>
-          <Card>
-            <CardHeader>
-              <CardTitle>Secure</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>Built with security in mind.</p>
-            </CardContent>
-          </Card>
-        </motion.div>
-      </section>
+      <ProductLists />
+    
     </div>
   );
 }

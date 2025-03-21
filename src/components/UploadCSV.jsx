@@ -1,7 +1,9 @@
+"use client"
+
 import React, { useState } from "react";
 import Papa from "papaparse";
-import { db } from "@/lib/firebase";
-import { collection, addDoc } from "firebase/firestore";
+import { db } from "@/lib/firebaseConfig";
+import { collection, addDoc , serverTimestamp } from "firebase/firestore";
 
 const UploadCSV = () => {
   const [file, setFile] = useState(null);
@@ -33,7 +35,8 @@ const UploadCSV = () => {
           chemicalResistance: row[10],
           ecoCertification: row[11],
           manufactureDate: row[12],
-          expiryDate: row[13]
+          expiryDate: row[13],
+          timestamp: serverTimestamp(),  // 添加 timestamp 字段
         }));
 
         try {

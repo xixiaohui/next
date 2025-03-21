@@ -1,0 +1,101 @@
+name,brand,price,unit,fiberType,density,tensileStrength,flexuralStrength,waterAbsorption,elongation,chemicalResistance,ecoCertification,manufactureDate,expiryDate
+Fiberglass Product-1,Johns Manville,11.62,kg,Basalt,2.41,3187.33,375.67,0.0216,3.88,Good,None,2023/3/26,2025/4/29
+Fiberglass Product-2,Taishan Fiberglass,26.49,kg,S-Glass,2.49,1722.76,115.06,0.0391,1.66,Good,ISO 14001,2023/11/26,2026/2/12
+Fiberglass Product-3,3B-the Fibreglass Company,30.68,kg,E-Glass,2.68,2865.73,396.52,0.0519,2.25,Poor,ISO 14001,2023/10/8,2026/6/30
+Fiberglass Product-4,Owens Corning,69.85,kg,Basalt,2.65,3379.22,346.01,0.1119,2.82,Poor,"RoHS, REACH",2025/1/29,2027/10/10
+Fiberglass Product-5,Johns Manville,76.37,kg,C-Glass,2.41,2565.45,498.82,0.0101,1.64,Good,ISO 14001,2025/1/5,2026/10/4
+Fiberglass Product-6,Owens Corning,79.6,kg,S-Glass,2.46,2618.09,468.4,0.1651,2.04,Poor,None,2024/9/2,2027/5/28
+Fiberglass Product-7,Nippon Electric Glass,23.79,kg,E-Glass,2.68,2179.39,412.8,0.1655,3,Excellent,"RoHS, REACH",2023/12/5,2025/9/2
+Fiberglass Product-8,AGY,20.01,kg,C-Glass,2.51,3413.57,239.26,0.139,4.02,Excellent,"RoHS, REACH",2024/7/11,2025/11/25
+Fiberglass Product-9,Taishan Fiberglass,22.93,kg,C-Glass,2.49,2673.89,152.2,0.0569,2.08,Poor,None,2023/6/2,2024/6/26
+Fiberglass Product-10,CPIC,62.92,kg,S-Glass,2.61,3437.52,207.35,0.0197,3.88,Moderate,"RoHS, REACH",2024/7/22,2026/9/28
+Fiberglass Product-11,Johns Manville,60.57,kg,Carbon,2.47,2965.72,495.95,0.0719,3.53,Excellent,None,2024/4/27,2025/9/17
+Fiberglass Product-12,CPIC,10.47,kg,E-Glass,2.49,3126.22,407.85,0.1788,3.35,Good,ISO 14001,2024/2/24,2027/1/2
+Fiberglass Product-13,Shangwei,86.24,kg,C-Glass,2.56,3424.38,411.34,0.1849,1.92,Moderate,"RoHS, REACH",2024/1/14,2025/7/24
+Fiberglass Product-14,Saint-Gobain Vetrotex,96.04,kg,Carbon,2.64,1799.37,405.13,0.0896,2.98,Excellent,None,2024/3/26,2025/4/21
+Fiberglass Product-15,Nippon Electric Glass,20.72,kg,Basalt,2.5,3490.36,115.57,0.0455,3.58,Moderate,None,2024/4/30,2026/11/22
+Fiberglass Product-16,AGY,33.29,kg,C-Glass,2.4,3402.92,123.1,0.0182,3.9,Good,"RoHS, REACH",2023/5/20,2025/10/22
+Fiberglass Product-17,Johns Manville,32.28,kg,Carbon,2.4,1973.11,305.54,0.0664,2.07,Excellent,ISO 14001,2024/5/23,2026/3/19
+Fiberglass Product-18,3B-the Fibreglass Company,17.21,kg,Basalt,2.57,3245.19,243.9,0.067,3.26,Good,None,2023/5/30,2025/8/26
+Fiberglass Product-19,3B-the Fibreglass Company,43.04,kg,S-Glass,2.62,1634.92,483.5,0.0999,2.94,Good,ISO 14001,2023/3/25,2024/7/1
+Fiberglass Product-20,Shangwei,51.51,kg,Basalt,2.55,2722.59,194.63,0.0189,1.78,Good,"RoHS, REACH",2023/12/13,2025/8/13
+Fiberglass Product-21,3B-the Fibreglass Company,30.64,kg,Carbon,2.55,2307.52,216.19,0.0787,2.89,Excellent,"RoHS, REACH",2023/5/15,2025/8/27
+Fiberglass Product-22,3B-the Fibreglass Company,27.69,kg,C-Glass,2.54,3162.23,478.26,0.0168,2.35,Poor,"RoHS, REACH",2023/3/24,2025/4/10
+Fiberglass Product-23,Johns Manville,51.01,kg,Basalt,2.44,3454.04,222.29,0.1592,3.24,Good,"RoHS, REACH",2024/12/23,2027/6/9
+Fiberglass Product-24,Taishan Fiberglass,17.17,kg,Carbon,2.7,1647.75,268.9,0.1648,2.85,Moderate,ISO 14001,2024/9/19,2026/10/16
+Fiberglass Product-25,Nippon Electric Glass,72.98,kg,Carbon,2.62,3279.58,383.55,0.1065,2.07,Excellent,None,2023/12/4,2026/6/18
+Fiberglass Product-26,Nippon Electric Glass,65.49,kg,S-Glass,2.56,2164.23,492.2,0.172,2.14,Good,None,2024/3/7,2025/9/13
+Fiberglass Product-27,Johns Manville,57.82,kg,C-Glass,2.52,2451.51,413.73,0.1667,2.74,Poor,"RoHS, REACH",2023/5/24,2025/7/29
+Fiberglass Product-28,China Jushi,40.54,kg,C-Glass,2.44,2574.61,343.78,0.0814,2.29,Excellent,"RoHS, REACH",2024/1/28,2027/1/5
+Fiberglass Product-29,3B-the Fibreglass Company,90.6,kg,Basalt,2.47,3049.39,387.68,0.1308,2.1,Excellent,"RoHS, REACH",2024/1/20,2025/2/14
+Fiberglass Product-30,Shangwei,64.13,kg,Carbon,2.51,1867.9,453.88,0.0313,4.31,Poor,"RoHS, REACH",2023/5/14,2026/4/11
+Fiberglass Product-31,Owens Corning,97.7,kg,S-Glass,2.66,1948.74,332.78,0.195,2.34,Moderate,None,2023/12/4,2025/9/20
+Fiberglass Product-32,Johns Manville,47.86,kg,Basalt,2.65,2128.61,404.02,0.1233,4.41,Good,"RoHS, REACH",2024/7/7,2026/11/11
+Fiberglass Product-33,China Jushi,32.02,kg,Basalt,2.63,3332.54,493.15,0.0847,3.82,Moderate,ISO 14001,2023/9/23,2026/3/30
+Fiberglass Product-34,Nippon Electric Glass,51.78,kg,E-Glass,2.54,3100.45,318.91,0.1076,3.36,Good,"RoHS, REACH",2024/8/24,2025/12/5
+Fiberglass Product-35,AGY,46.23,kg,E-Glass,2.61,2847.4,308.45,0.1398,3.88,Good,"RoHS, REACH",2023/12/31,2025/7/27
+Fiberglass Product-36,Taishan Fiberglass,25.79,kg,Basalt,2.51,3066.85,152.94,0.0756,3.24,Poor,"RoHS, REACH",2023/10/25,2025/11/6
+Fiberglass Product-37,Shangwei,84.04,kg,E-Glass,2.55,1542.54,389.22,0.1092,2.26,Poor,None,2024/9/8,2027/3/14
+Fiberglass Product-38,Saint-Gobain Vetrotex,28.87,kg,E-Glass,2.7,2786.79,369.42,0.0874,2.58,Moderate,None,2024/10/7,2027/3/28
+Fiberglass Product-39,Nippon Electric Glass,92.46,kg,E-Glass,2.49,2804.62,122.06,0.1127,3.5,Poor,ISO 14001,2023/8/20,2024/10/30
+Fiberglass Product-40,Johns Manville,90.69,kg,S-Glass,2.46,2028.01,419.74,0.0816,3.59,Poor,"RoHS, REACH",2025/1/4,2026/11/12
+Fiberglass Product-41,Johns Manville,64.3,kg,E-Glass,2.55,3102.11,201.22,0.1614,3.4,Good,"RoHS, REACH",2025/2/3,2027/4/1
+Fiberglass Product-42,3B-the Fibreglass Company,59.64,kg,S-Glass,2.49,2824.88,478.78,0.1631,3.29,Poor,None,2023/7/21,2026/5/20
+Fiberglass Product-43,AGY,14.13,kg,C-Glass,2.46,3130.07,330.3,0.056,3.06,Moderate,None,2024/4/22,2026/6/3
+Fiberglass Product-44,CPIC,61.41,kg,E-Glass,2.61,2574.95,173.56,0.1957,2.31,Poor,None,2024/1/8,2026/2/9
+Fiberglass Product-45,AGY,45.51,kg,E-Glass,2.51,3429.83,408.16,0.0929,1.64,Good,ISO 14001,2024/4/30,2026/12/24
+Fiberglass Product-46,Shangwei,38.31,kg,Carbon,2.69,3342.03,409.32,0.1872,3.61,Excellent,ISO 14001,2023/6/22,2026/6/4
+Fiberglass Product-47,Owens Corning,47.01,kg,Basalt,2.64,3147.78,187.18,0.06,3.66,Moderate,"RoHS, REACH",2024/3/20,2025/5/23
+Fiberglass Product-48,3B-the Fibreglass Company,58.55,kg,S-Glass,2.58,2378.35,256.36,0.1105,3.95,Moderate,ISO 14001,2024/2/3,2025/8/29
+Fiberglass Product-49,Taishan Fiberglass,59.52,kg,S-Glass,2.69,2969.39,404.42,0.0358,4.21,Poor,"RoHS, REACH",2024/11/21,2027/1/3
+Fiberglass Product-50,Owens Corning,83.72,kg,Carbon,2.67,2720.41,214.69,0.0405,1.99,Excellent,"RoHS, REACH",2024/11/21,2027/7/23
+Fiberglass Product-51,CPIC,15.65,kg,S-Glass,2.65,2900.35,213.56,0.0166,2.31,Poor,None,2024/2/22,2025/4/21
+Fiberglass Product-52,CPIC,47.66,kg,E-Glass,2.54,3453.28,382.16,0.0286,3.34,Good,None,2024/2/24,2026/7/4
+Fiberglass Product-53,Saint-Gobain Vetrotex,99.75,kg,Basalt,2.62,2147.87,110.35,0.0199,4.02,Excellent,ISO 14001,2023/7/31,2024/11/10
+Fiberglass Product-54,3B-the Fibreglass Company,83.89,kg,E-Glass,2.44,3157.67,208.88,0.0825,2.83,Poor,"RoHS, REACH",2024/10/11,2026/4/15
+Fiberglass Product-55,Saint-Gobain Vetrotex,25.84,kg,E-Glass,2.42,2968.38,374.05,0.0624,3.37,Excellent,None,2023/7/31,2024/12/30
+Fiberglass Product-56,Saint-Gobain Vetrotex,71.27,kg,E-Glass,2.64,2084.4,492.02,0.1619,2.87,Poor,None,2024/2/5,2026/8/30
+Fiberglass Product-57,AGY,55.95,kg,S-Glass,2.53,2818.98,497.73,0.0157,2.39,Good,ISO 14001,2024/8/4,2026/4/25
+Fiberglass Product-58,Saint-Gobain Vetrotex,75.23,kg,Carbon,2.46,1576.35,170.72,0.1021,2.57,Moderate,ISO 14001,2024/12/5,2027/2/27
+Fiberglass Product-59,Owens Corning,60.59,kg,Basalt,2.65,1825.5,477.66,0.0286,1.5,Excellent,"RoHS, REACH",2023/10/29,2026/3/27
+Fiberglass Product-60,China Jushi,66.36,kg,E-Glass,2.44,2670.5,147.91,0.1763,2.02,Poor,None,2023/10/18,2026/9/24
+Fiberglass Product-61,Nippon Electric Glass,60.55,kg,Carbon,2.64,3436.21,283.84,0.1813,3.4,Good,ISO 14001,2024/4/10,2026/10/20
+Fiberglass Product-62,3B-the Fibreglass Company,74.07,kg,S-Glass,2.68,2669.22,406.87,0.1138,4.15,Good,ISO 14001,2025/2/18,2027/10/1
+Fiberglass Product-63,AGY,86.34,kg,E-Glass,2.58,2644.88,221.04,0.0507,2.33,Moderate,None,2024/12/12,2025/12/29
+Fiberglass Product-64,Taishan Fiberglass,93.43,kg,S-Glass,2.6,2584.28,214.24,0.1349,2.88,Excellent,ISO 14001,2024/11/13,2027/8/21
+Fiberglass Product-65,CPIC,83.09,kg,Basalt,2.56,2354.57,225.59,0.0403,2.85,Excellent,None,2024/1/9,2026/6/18
+Fiberglass Product-66,Owens Corning,76.85,kg,C-Glass,2.64,3115.21,414.95,0.0751,1.55,Excellent,"RoHS, REACH",2025/1/7,2026/1/29
+Fiberglass Product-67,AGY,76.4,kg,S-Glass,2.45,1885.51,210.81,0.0383,2.7,Moderate,"RoHS, REACH",2024/12/14,2027/6/24
+Fiberglass Product-68,Nippon Electric Glass,55.9,kg,S-Glass,2.4,2886.12,102.61,0.0564,4.38,Poor,"RoHS, REACH",2024/9/4,2026/9/13
+Fiberglass Product-69,CPIC,15.96,kg,E-Glass,2.52,3406.32,492.44,0.1588,3.56,Excellent,None,2023/11/16,2026/2/9
+Fiberglass Product-70,Nippon Electric Glass,92.98,kg,Basalt,2.41,1502.18,398.44,0.0625,2.75,Excellent,None,2024/4/12,2026/7/11
+Fiberglass Product-71,China Jushi,48.18,kg,S-Glass,2.4,2102.02,103.65,0.1948,1.95,Excellent,None,2023/9/30,2026/2/15
+Fiberglass Product-72,3B-the Fibreglass Company,64.44,kg,C-Glass,2.67,1863.41,362.82,0.0697,2.65,Moderate,ISO 14001,2023/5/4,2025/4/25
+Fiberglass Product-73,CPIC,60.18,kg,C-Glass,2.51,2339.78,211.63,0.1793,3.3,Excellent,ISO 14001,2024/6/4,2025/11/17
+Fiberglass Product-74,Shangwei,48.62,kg,S-Glass,2.41,1984.46,240.97,0.0964,1.73,Excellent,None,2024/3/14,2026/10/1
+Fiberglass Product-75,Nippon Electric Glass,96.04,kg,E-Glass,2.64,3011.15,293.2,0.157,1.53,Excellent,None,2023/5/28,2025/2/27
+Fiberglass Product-76,AGY,13.4,kg,C-Glass,2.7,2570.64,210.82,0.0571,2.98,Excellent,"RoHS, REACH",2024/6/14,2025/7/22
+Fiberglass Product-77,Saint-Gobain Vetrotex,23.98,kg,E-Glass,2.44,2663.68,246.5,0.1161,2.55,Moderate,None,2023/11/19,2025/12/17
+Fiberglass Product-78,Owens Corning,81.47,kg,S-Glass,2.68,3306.09,301.1,0.0679,3.07,Poor,ISO 14001,2024/3/2,2025/5/29
+Fiberglass Product-79,Johns Manville,32.46,kg,C-Glass,2.61,1997.01,116.66,0.1059,2.79,Moderate,"RoHS, REACH",2024/3/31,2026/3/9
+Fiberglass Product-80,CPIC,47.53,kg,S-Glass,2.7,2634.53,158.24,0.1612,2.29,Poor,None,2023/11/23,2025/3/20
+Fiberglass Product-81,Saint-Gobain Vetrotex,60.25,kg,Basalt,2.56,1677.43,205.92,0.1975,3.32,Excellent,None,2023/11/16,2024/12/31
+Fiberglass Product-82,Shangwei,19.39,kg,E-Glass,2.63,3374.54,335.28,0.0619,2.43,Poor,ISO 14001,2024/10/26,2026/5/26
+Fiberglass Product-83,China Jushi,74.47,kg,Carbon,2.55,1851.15,370.95,0.0724,4.46,Good,ISO 14001,2024/12/15,2027/9/16
+Fiberglass Product-84,China Jushi,46.21,kg,C-Glass,2.56,1686.76,407.18,0.1733,3.79,Good,"RoHS, REACH",2024/6/15,2027/6/14
+Fiberglass Product-85,3B-the Fibreglass Company,24.33,kg,C-Glass,2.52,1856.61,216.33,0.1293,2.06,Poor,None,2025/1/12,2027/1/6
+Fiberglass Product-86,Saint-Gobain Vetrotex,29.06,kg,C-Glass,2.58,2925.46,287.87,0.154,4.19,Excellent,"RoHS, REACH",2023/8/19,2025/8/26
+Fiberglass Product-87,Taishan Fiberglass,11.76,kg,Carbon,2.51,1959.47,377.29,0.1636,3.07,Good,ISO 14001,2025/2/10,2026/5/14
+Fiberglass Product-88,China Jushi,57.45,kg,E-Glass,2.6,3326.08,402.75,0.0945,1.56,Good,None,2024/4/24,2025/5/1
+Fiberglass Product-89,Shangwei,80,kg,S-Glass,2.59,3037.37,390.61,0.0638,2.24,Poor,ISO 14001,2023/5/5,2025/4/24
+Fiberglass Product-90,Saint-Gobain Vetrotex,23.67,kg,Carbon,2.42,3298.3,336.34,0.1722,2.08,Poor,"RoHS, REACH",2023/3/29,2024/12/11
+Fiberglass Product-91,Nippon Electric Glass,45.53,kg,Carbon,2.47,3025.71,102.47,0.0742,2.55,Good,ISO 14001,2024/5/8,2025/9/20
+Fiberglass Product-92,Nippon Electric Glass,39.46,kg,Basalt,2.53,1841.69,188.75,0.0829,3.97,Good,None,2023/4/16,2024/9/1
+Fiberglass Product-93,Nippon Electric Glass,68.62,kg,Basalt,2.53,1858.31,127.39,0.1933,3.52,Good,"RoHS, REACH",2023/6/30,2024/10/31
+Fiberglass Product-94,Saint-Gobain Vetrotex,79.18,kg,S-Glass,2.43,2285.21,126.95,0.1448,1.58,Poor,ISO 14001,2023/4/29,2025/7/24
+Fiberglass Product-95,Owens Corning,55.57,kg,Basalt,2.52,3044.38,126.62,0.0419,1.86,Excellent,"RoHS, REACH",2024/4/5,2026/9/30
+Fiberglass Product-96,Owens Corning,67.39,kg,S-Glass,2.49,3095.01,293,0.0572,2.71,Excellent,None,2023/12/10,2026/10/30
+Fiberglass Product-97,Shangwei,84.98,kg,E-Glass,2.56,2689.44,297.1,0.1875,3.88,Moderate,None,2024/7/23,2026/11/24
+Fiberglass Product-98,China Jushi,38.73,kg,Basalt,2.51,1642.83,276.75,0.0127,1.95,Poor,None,2023/11/18,2025/5/17
+Fiberglass Product-99,Owens Corning,32.97,kg,C-Glass,2.52,1502.78,153.03,0.0218,3.71,Poor,None,2024/2/15,2026/6/28
+Fiberglass Product-100,CPIC,72.4,kg,S-Glass,2.64,1828.48,268.77,0.0321,3.82,Poor,ISO 14001,2023/10/2,2025/7/3
