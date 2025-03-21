@@ -8,7 +8,7 @@ export default function CustomButton() {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push('/pricing');
+    router.push('/admin/dashboard');
   };
 
   return (
