@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 
 import ProductComparisonChart from "@/components/ProductComparisonChart";
 
+
+
 export default function Pricing() {
   return (
     <div className="container mx-auto py-16">
@@ -19,6 +21,9 @@ export default function Pricing() {
         </Card>
         
         <ProductComparisonChart/>
+
+      
+
       </div>
     </div>
   );

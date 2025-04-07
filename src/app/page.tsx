@@ -1,9 +1,17 @@
 "use client"; // 由于使用客户端动画，添加此指令
+
 import { motion } from "framer-motion";
 
 import  CustomButton  from "@/components/CustomButton";
 
-import ProductLists from "@/components/ProductsLists"
+import ProductLists from "@/components/ProductsLists";
+
+import DataTable from "@/components/DataTable";
+
+import MyCard from "@/components/MyCard";
+
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+const queryClient = new QueryClient();
 
 export default function Home() {
   return (
@@ -35,7 +43,29 @@ export default function Home() {
         </motion.div>
       </section>
 
-      <ProductLists />
+   
+
+      <div className="grid grid-cols-10 gap-4">
+        
+        <div>
+          <MyCard />
+        </div>
+        
+
+        <div className="bg-sky-50 col-span-8 col-start-2 ...">
+
+          <QueryClientProvider client={queryClient}>
+            <DataTable />  {/* 你的 DataTable 组件会在这个上下文中使用 React Query */}
+          </QueryClientProvider>
+
+        </div>
+
+        <div className="bg-sky-200 col-span-8 col-start-2 ...">
+          <ProductLists />
+        </div>
+
+      </div>
+      
     
     </div>
   );
