@@ -4,7 +4,11 @@ import { useEffect, useState } from "react";
 import { getProductById } from "@/components/getProductById";
 import { Card, CardContent } from "@/components/ui/card";
 
-export default function ProductDetailClient({ productId }: { productId: string }) {
+export default function ProductDetailClient({
+  productId,
+}: {
+  productId: string;
+}) {
   const [product, setProduct] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
