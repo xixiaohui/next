@@ -1,0 +1,15 @@
+// utils/getProductByBrand.ts
+import { collection, query, where, getDocs } from "firebase/firestore";
+import { db } from "@/lib/firebase";
+
+export async function getProductByBrand(brandName: string) {
+  const q = query(collection(db, "products"), where("brand", "==", brandName));
+  const querySnapshot = await getDocs(q);
+
+  const products: any[] = [];
+  querySnapshot.forEach((doc) => {
+    products.push({ id: doc.id, ...doc.data() });
+  });
+
+  return products;
+}
