@@ -4,6 +4,13 @@ import { useEffect, useState } from "react";
 import { getProductById } from "@/components/getProductById";
 import { Card, CardContent } from "@/components/ui/card";
 
+import BrandListClient from "@/components/BrandListClient";
+
+import PriceRangeSelector from "@/components/product/PriceRangeSelector";
+import ProductListByPrice from "@/components/product/ProductListByPrice";
+
+
+
 export default function ProductDetailClient({
   productId,
 }: {
@@ -11,6 +18,8 @@ export default function ProductDetailClient({
 }) {
   const [product, setProduct] = useState<any>(null);
   const [loading, setLoading] = useState(true);
+
+  const [range, setRange] = useState<[number, number]>([0, 1000]);
 
   useEffect(() => {
     getProductById(productId)
@@ -34,7 +43,7 @@ export default function ProductDetailClient({
         <div>
           <Card
             key={product.id}
-            className="cursor-pointer rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition"
+            className="rounded-2xl shadow-md hover:shadow-xl transition-shadow h-full bg-sky-100"
           >
             <CardContent className="p-5">
               <div className="flex flex-col gap-1">
@@ -47,10 +56,19 @@ export default function ProductDetailClient({
             </CardContent>
           </Card>
         </div>
+        <div className="mt-4">
+          <ProductListByPrice minPrice={range[0]} maxPrice={range[1]} />
+        </div>
+        
       </main>
 
       <aside className="col-span-4 bg-white rounded-xl shadow p-4">
         <p className="font-bold">推荐/广告</p>
+
+        <BrandListClient />
+
+        <PriceRangeSelector min={0} max={100} onChange={setRange} />
+        
       </aside>
     </div>
   );

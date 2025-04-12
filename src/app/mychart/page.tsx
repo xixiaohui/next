@@ -3,8 +3,12 @@ import { useState, useEffect } from "react";
 import { db } from "@/lib/firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+
 import { useRouter } from "next/navigation";
+
+import BrandListClient from "@/components/BrandListClient";
+
+import ProductPriceFilter from "@/components/product/ProductPriceFilter";
 
 import {
   Select,
@@ -48,23 +52,7 @@ export default function PostsPage() {
     <div className="grid grid-cols-12 gap-4 max-w-[1200px] mx-auto px-4">
       <aside className="col-span-2 bg-white rounded-xl shadow p-4">
         <p className="font-bold">简介/导航</p>
-        <div className="mb-2">
-          <Button variant="outline" className="m-2 bg-blue-500">
-            Fierglass
-          </Button>
-          <Button variant="outline" className="m-2">
-            Fierglass
-          </Button>
-          <Button variant="outline" className="m-2">
-            Fierglass
-          </Button>
-          <Button variant="outline" className="m-2">
-            Fierglass
-          </Button>
-          <Button variant="outline" className="m-2">
-            Fierglass
-          </Button>
-        </div>
+        
       </aside>
 
       <main className="col-span-6 bg-white rounded-xl shadow p-4">
@@ -98,7 +86,7 @@ export default function PostsPage() {
             <Card
               key={product.id}
               onClick={() => router.push(`/products/${product.id}`)} // 点击跳转
-              className="cursor-pointer rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition"
+              className="cursor-pointer rounded-2xl shadow-md hover:shadow-xl transition-shadow h-full bg-sky-100"
             >
               <CardContent className="p-5">
                 <div className="flex flex-col gap-1">
@@ -116,6 +104,10 @@ export default function PostsPage() {
 
       <aside className="col-span-4 bg-white rounded-xl shadow p-4">
         <p className="font-bold">推荐/广告</p>
+
+        <BrandListClient />
+
+        
       </aside>
     </div>
   );
