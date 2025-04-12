@@ -9,6 +9,7 @@ import BrandListClient from "@/components/BrandListClient";
 import PriceRangeSelector from "@/components/product/PriceRangeSelector";
 import ProductListByPrice from "@/components/product/ProductListByPrice";
 
+import ProductCard from "@/components/product/ProductCard";
 
 
 export default function ProductDetailClient({
@@ -41,22 +42,12 @@ export default function ProductDetailClient({
         <p className="font-bold">动态内容</p>
 
         <div>
-          <Card
-            key={product.id}
-            className="rounded-2xl shadow-md hover:shadow-xl transition-shadow h-full bg-sky-100"
-          >
-            <CardContent className="p-5">
-              <div className="flex flex-col gap-1">
-                <h2 className="text-xl font-semibold text-gray-900">
-                  {product.name}
-                </h2>
-                <span className="text-sm text-gray-500">{product.brand}</span>
-                <strong>${product.price}</strong>
-              </div>
-            </CardContent>
-          </Card>
+          
+          <ProductCard key={product.id} product={product} />
         </div>
+
         <div className="mt-4">
+          <h2 className="text-3xl font-bold mb-6">当前价格范围产品</h2>
           <ProductListByPrice minPrice={range[0]} maxPrice={range[1]} />
         </div>
         

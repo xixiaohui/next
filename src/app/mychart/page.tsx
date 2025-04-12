@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 
 import BrandListClient from "@/components/BrandListClient";
 
-import ProductPriceFilter from "@/components/product/ProductPriceFilter";
+import BrandPriceChart from "@/components/charts/BrandPriceChart";
 
 import {
   Select,
@@ -58,6 +58,10 @@ export default function PostsPage() {
       <main className="col-span-6 bg-white rounded-xl shadow p-4">
         <p className="font-bold">动态内容</p>
 
+        <div className="mb-6">
+          <BrandPriceChart brand="所有产品" products={products} />
+        </div>
+        
         <div className="flex justify-between items-center mb-4 gap-4">
           <Select onValueChange={setBrand}>
             <SelectTrigger className="w-[200px]">

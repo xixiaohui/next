@@ -7,6 +7,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import BrandListClient from "@/components/BrandListClient";
 import { useRouter } from "next/navigation";
 
+import BrandPriceChart from "@/components/charts/BrandPriceChart";
+import BrandProductList from "@/components/product/BrandProductList"
+
+import ProductPricePieChart from "@/components/charts/ProductPricePieChart";
+import ProductPriceLineChart from "@/components/charts/ProductPriceLineChart";
+
 
 export default function BrandProductsClient({ brand }: { brand: string }) {
 
@@ -32,7 +38,23 @@ export default function BrandProductsClient({ brand }: { brand: string }) {
       </aside>
 
       <main className="col-span-6 bg-white rounded-xl shadow p-4">
-        <h1 className="text-2xl font-bold mb-6">品牌：{brand}</h1>
+        <h1 className="text-2xl font-bold mb-6">价格图</h1>
+        <BrandPriceChart brand={brand} products={products} />
+
+        <div className="mb-6 mt-6">
+          <BrandProductList brand={brand} />
+        </div>
+        
+        {/*显示此品牌产品的价格饼状图 */}
+        <ProductPricePieChart data={ products} />
+
+        {/*显示此品牌产品的价格走势图 */}
+        <div className="mb-6 mt-6">
+          <ProductPriceLineChart data={products} title={`${brand} 玻纤系列产品价格走势`} />
+        </div>
+        
+
+        <h1 className="text-2xl font-bold mb-6 mt-6">品牌：{brand}</h1>
         {products.length === 0 ? (
           <p className="text-gray-500">暂无此品牌的产品。</p>
         ) : (
