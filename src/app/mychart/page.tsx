@@ -18,6 +18,7 @@ import {
   SelectItem,
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui";
 
 export default function PostsPage() {
   const router = useRouter(); // 新增
@@ -52,15 +53,25 @@ export default function PostsPage() {
     <div className="grid grid-cols-12 gap-4 max-w-[1200px] mx-auto px-4">
       <aside className="col-span-2 bg-white rounded-xl shadow p-4">
         <p className="font-bold">简介/导航</p>
+        <h1 className="text-3xl font-bold mb-6">产品类型</h1>
+        
+        <Button className="m-2">yarn</Button>
+        <Button className="m-2">Direct Roving</Button>
+        <Button className="m-2 max-w-full"><p className="truncate max-w-5/6">Assembled Roving</p></Button>
+        <Button className="m-2 max-w-full"><p className="truncate max-w-5/6">Chopped Strand Mat</p></Button>
+        <Button className="m-2">Chopped Strand</Button>
+        <Button className="m-2 max-w-full"><p className="truncate max-w-5/6">Stitched Mat / Combo Mat</p></Button>
+        <Button className="m-2">E-glass Fabric</Button>
+        <Button className="m-2">mesh</Button>
         
       </aside>
 
       <main className="col-span-6 bg-white rounded-xl shadow p-4">
         <p className="font-bold">动态内容</p>
 
-        <div className="mb-6">
+        {/* <div className="mb-6">
           <BrandPriceChart brand="所有产品" products={products} />
-        </div>
+        </div> */}
         
         <div className="flex justify-between items-center mb-4 gap-4">
           <Select onValueChange={setBrand}>
@@ -111,7 +122,16 @@ export default function PostsPage() {
 
         <BrandListClient />
 
-        
+        <h1 className="text-3xl font-bold mb-6">工艺列表</h1>
+        <Button className="m-2">手糊成型（Hand Lay-Up）</Button>
+        <Button className="m-2">喷射成型（Spray-Up）</Button>
+        <Button className="m-2">RTM（树脂传递模塑）</Button>
+        <Button className="m-2">拉挤成型（Pultrusion）</Button>
+        <Button className="m-2">缠绕成型（Filament Winding）</Button>
+        <Button className="m-2">热压模压（SMC / BMC）</Button>
+        <Button className="m-2">真空导入成型（VARTM / Vacuum Infusion）</Button>
+        <Button className="m-2">3D 编织（3D Weaving）</Button>
+
       </aside>
     </div>
   );

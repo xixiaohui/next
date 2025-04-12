@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const MyCard = () => {
   const imageSrc =
-    "https://compocore.com/wp-content/uploads/2022/12/laia-nunez-AThSwV0LsCQ-unsplash-scaled.jpg";
+    "/images/blog/image-1.jpg";
 
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg">

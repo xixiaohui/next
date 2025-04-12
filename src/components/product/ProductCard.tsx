@@ -49,6 +49,10 @@ export default function ProductCard({ product }: Props) {
     Unit: product.unit,
     WaterAbsorption: product.waterAbsorption,
   };
+
+  const imageSrc =
+    "/images/blog/image-1.jpg";
+    
   return (
     <Card
       key={product.id}
@@ -65,8 +69,14 @@ export default function ProductCard({ product }: Props) {
               className="object-cover"
             />
           ) : (
-            <div className="w-full h-full flex items-center justify-center text-gray-400">
-              无图
+            <div className="flex justify-center">
+              <Image
+                src={imageSrc} // 外部图片 URL
+                alt="Example Image"
+                fill
+                blurDataURL="data:image/jpeg;base64"
+                quality={75}
+              />
             </div>
           )}
         </div>
@@ -77,42 +87,7 @@ export default function ProductCard({ product }: Props) {
             <h2 className="text-xl font-semibold">{product.name}</h2>
           </div>
           
-          {/*
-          <p className="text-sm text-muted-foreground">品牌：{product.brand}</p>
-          <p className="text-base font-medium text-green-600">
-            ${product.price}
-          </p>
-          {product.description && (
-            <p className="text-sm text-gray-600 line-clamp-2">
-              {product.description}
-            </p>
-          )}
-           <p className="text-base font-medium">
-            chemicalResistance: {product.chemicalResistance}
-          </p>
-          <p className="text-base font-medium">density: {product.density}</p>
-          <p className="text-base font-medium">
-            ecoCertification: {product.ecoCertification}
-          </p>
-          <p className="text-base font-medium">
-            elongation: {product.elongation}
-          </p>
-          <p className="text-base font-medium">
-            expiryDate: {product.expiryDate}
-          </p>
-          <p className="text-base font-medium">
-            fiberType: {product.fiberType}
-          </p>
-          <p className="text-base font-medium">
-            flexuralStrength: {product.flexuralStrength}
-          </p>
-          <p className="text-base font-medium">
-            tensileStrength: {product.tensileStrength}
-          </p>
-          <p className="text-base font-medium">unit: {product.unit}</p>
-          <p className="text-base font-medium">
-            waterAbsorption: {product.waterAbsorption}
-          </p> */}
+          
 
           <ProductAttributesTable attributes={attributes} />
         </div>

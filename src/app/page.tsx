@@ -52,7 +52,7 @@ export default function Home() {
         </div>
         
 
-        <div className="bg-sky-50 col-span-8 col-start-2 ...">
+        <div className="bg-sky-50 col-span-8 col-start-2 mb-8">
 
           <QueryClientProvider client={queryClient}>
             <DataTable />  {/* 你的 DataTable 组件会在这个上下文中使用 React Query */}
@@ -60,9 +60,9 @@ export default function Home() {
 
         </div>
 
-        <div className="bg-sky-200 col-span-8 col-start-2 ...">
+        {/* <div className="bg-sky-200 col-span-8 col-start-2 ...">
           <ProductLists />
-        </div>
+        </div> */}
 
       </div>
       
