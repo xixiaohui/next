@@ -24,6 +24,9 @@ export interface Product {
   tensileStrength: number;
   unit: string;
   waterAbsorption: number;
+  category: string;
+  process: string;
+
   tds: {
     [key: string]: string;
   };

@@ -10,6 +10,15 @@ import BrandListClient from "@/components/BrandListClient";
 
 import BrandPriceChart from "@/components/charts/BrandPriceChart";
 
+import ProductFilterControls from "@/components/ProductFilterControls";
+import ProductListWithCatelog from "@/components/ProductListWithCatelog";
+
+import AddFiled from "@/components/AddField";
+
+import FilterButtonGroup from "@/components/FilterButtonGroup";
+import FilteredProductList from "@/components/FilteredProductList";
+import FilteredProductListByCategory from "@/components/FilteredProductListByCategory";
+
 import {
   Select,
   SelectTrigger,
@@ -22,10 +31,20 @@ import { Button } from "@/components/ui";
 
 export default function PostsPage() {
   const router = useRouter(); // 新增
-  
+
   const [products, setProducts] = useState([]);
   const [brand, setBrand] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
+
+  const [filters, setFilters] = useState({
+    category: "E-glass Fabric",
+    brand: "AGY",
+    priceRange: "all",
+  });
+
+  const [process, setProcess] = useState("Pultrusion");
+
+  const [catelog, setCatelog] = useState("Yarn");
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -53,17 +72,48 @@ export default function PostsPage() {
     <div className="grid grid-cols-12 gap-4 max-w-[1200px] mx-auto px-4">
       <aside className="col-span-2 bg-white rounded-xl shadow p-4">
         <p className="font-bold">简介/导航</p>
-        <h1 className="text-3xl font-bold mb-6">产品类型</h1>
-        
-        <Button className="m-2">yarn</Button>
-        <Button className="m-2">Direct Roving</Button>
-        <Button className="m-2 max-w-full"><p className="truncate max-w-5/6">Assembled Roving</p></Button>
-        <Button className="m-2 max-w-full"><p className="truncate max-w-5/6">Chopped Strand Mat</p></Button>
-        <Button className="m-2">Chopped Strand</Button>
-        <Button className="m-2 max-w-full"><p className="truncate max-w-5/6">Stitched Mat / Combo Mat</p></Button>
-        <Button className="m-2">E-glass Fabric</Button>
-        <Button className="m-2">mesh</Button>
-        
+
+        <div>
+          {/* <h1 className="text-3xl font-bold mb-6">产品类型</h1>
+          <Button className="m-2">yarn</Button>
+          <Button className="m-2">Direct Roving</Button>
+          <Button className="m-2 max-w-full">
+            <p className="truncate max-w-5/6">Assembled Roving</p>
+          </Button>
+          <Button className="m-2 max-w-full">
+            <p className="truncate max-w-5/6">Chopped Strand Mat</p>
+          </Button>
+          <Button className="m-2">Chopped Strand</Button>
+          <Button className="m-2 max-w-full">
+            <p className="truncate max-w-5/6">Stitched Mat / Combo Mat</p>
+          </Button>
+          <Button className="m-2">E-glass Fabric</Button>
+          <Button className="m-2">Mesh</Button> */}
+
+
+          <h1 className="text-3xl font-bold mb-6 mt-6 text-fuchsia-400">产品类型</h1>
+          <FilterButtonGroup
+            options={[
+              "All",
+              "Yarn",
+              "Direct Roving",
+              "Assembled Roving",
+              "Chopped Strand Mat",
+              "Chopped Strand",
+              "Stitched Mat",
+              "Combo Mat",
+              "E-glass Fabric",
+              "Mesh",
+            ]}
+            active={catelog}
+            onChange={setCatelog}
+          />
+
+          {/* 多重筛选部分组件 */}
+          <ProductFilterControls filters={filters} onChange={setFilters} />
+
+          <AddFiled></AddFiled>
+        </div>
       </aside>
 
       <main className="col-span-6 bg-white rounded-xl shadow p-4">
@@ -72,7 +122,7 @@ export default function PostsPage() {
         {/* <div className="mb-6">
           <BrandPriceChart brand="所有产品" products={products} />
         </div> */}
-        
+
         <div className="flex justify-between items-center mb-4 gap-4">
           <Select onValueChange={setBrand}>
             <SelectTrigger className="w-[200px]">
@@ -97,6 +147,17 @@ export default function PostsPage() {
         </div>
 
         <div className="max-w-3xl mx-auto mt-10 space-y-6">
+          {/* 根据category筛选的产品 */}
+          <FilteredProductListByCategory category={catelog} />
+
+          {/* 工艺对应产品 */}
+          <FilteredProductList process={process} />
+
+          
+
+          {/* 多重筛选对应产品 */}
+          <ProductListWithCatelog filters={filters} />
+
           {filteredProducts.map((product) => (
             <Card
               key={product.id}
@@ -122,16 +183,35 @@ export default function PostsPage() {
 
         <BrandListClient />
 
-        <h1 className="text-3xl font-bold mb-6">工艺列表</h1>
-        <Button className="m-2">手糊成型（Hand Lay-Up）</Button>
-        <Button className="m-2">喷射成型（Spray-Up）</Button>
-        <Button className="m-2">RTM（树脂传递模塑）</Button>
-        <Button className="m-2">拉挤成型（Pultrusion）</Button>
-        <Button className="m-2">缠绕成型（Filament Winding）</Button>
-        <Button className="m-2">热压模压（SMC / BMC）</Button>
-        <Button className="m-2">真空导入成型（VARTM / Vacuum Infusion）</Button>
-        <Button className="m-2">3D 编织（3D Weaving）</Button>
+        <div>
+          {/* <h1 className="text-3xl font-bold mb-6">工艺列表</h1>
+          <Button className="m-2">手糊成型（Hand Lay-Up）</Button>
+          <Button className="m-2">喷射成型（Spray-Up）</Button>
+          <Button className="m-2">RTM（树脂传递模塑）</Button>
+          <Button className="m-2">拉挤成型（Pultrusion）</Button>
+          <Button className="m-2">缠绕成型（Filament Winding）</Button>
+          <Button className="m-2">热压模压（SMC / BMC）</Button>
+          <Button className="m-2">真空导入成型（VARTM / Vacuum Infusion）</Button>
+          <Button className="m-2">3D 编织（3D Weaving）</Button> */}
 
+          <h1 className="text-3xl font-bold mb-6 mt-6 text-emerald-400">工艺列表</h1>
+          <FilterButtonGroup
+            options={[
+              "All",
+              "Hand Lay-Up",
+              "Spray-Up",
+              "RTM",
+              "Pultrusion",
+              "Filament Winding",
+              "SMC",
+              "BMC",
+              "VARTM",
+              "3D Weaving",
+            ]}
+            active={process}
+            onChange={setProcess}
+          />
+        </div>
       </aside>
     </div>
   );
