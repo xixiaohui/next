@@ -28,11 +28,12 @@ import {
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 
+import { Product } from "@/components/product/ProductCard";
 
 export default function PostsPage() {
   const router = useRouter(); // 新增
 
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState<Product[]>([]);
   const [brand, setBrand] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -53,7 +54,7 @@ export default function PostsPage() {
         id: doc.id,
         ...doc.data(),
       }));
-      setProducts(productsList);
+      setProducts(productsList as Product[]);
     };
     fetchProducts();
   }, []);
