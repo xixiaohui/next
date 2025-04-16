@@ -13,7 +13,7 @@ import BrandProductList from "@/components/product/BrandProductList"
 import ProductPricePieChart from "@/components/charts/ProductPricePieChart";
 import ProductPriceLineChart from "@/components/charts/ProductPriceLineChart";
 
-import { Product} from "@/components/product/ProductCard"
+import { Product } from "@/components/product/ProductCard"
 
 
 export default function BrandProductsClient({ brand }: { brand: string }) {
@@ -26,7 +26,7 @@ export default function BrandProductsClient({ brand }: { brand: string }) {
 
   useEffect(() => {
     getProductByBrand(brand)
-      .then((data) => setProducts(data))
+      .then((data) => setProducts(data as Product[]))
       .catch(console.error)
       .finally(() => setLoading(false));
   }, [brand]);
