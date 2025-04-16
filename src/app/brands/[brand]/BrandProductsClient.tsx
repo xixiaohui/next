@@ -13,12 +13,14 @@ import BrandProductList from "@/components/product/BrandProductList"
 import ProductPricePieChart from "@/components/charts/ProductPricePieChart";
 import ProductPriceLineChart from "@/components/charts/ProductPriceLineChart";
 
+import { Product} from "@/components/product/ProductCard"
+
 
 export default function BrandProductsClient({ brand }: { brand: string }) {
 
   const router = useRouter(); // 新增
 
-  const [products, setProducts] = useState<unknown[]>([]);
+  const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
 
