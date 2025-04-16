@@ -4,11 +4,13 @@ import { useState } from "react";
 import ProductSelector from "./ProductSelector";
 import ProductComparisonTable from "./ProductComparisonTable";
 
-export default function ProductComparePage() {
-  const [p1, setP1] = useState<unknown | null>(null);
-  const [p2, setP2] = useState<unknown | null>(null);
+import {Product} from "@/components/product/ProductCard"
 
-  const handleSelect = (product1: unknown, product2: unknown) => {
+export default function ProductComparePage() {
+  const [p1, setP1] = useState<Product | null>(null);
+  const [p2, setP2] = useState<Product | null>(null);
+
+  const handleSelect = (product1: Product, product2: Product) => {
     setP1(product1);
     setP2(product2);
   };
