@@ -9,7 +9,7 @@ import {
   Tooltip,
   ResponsiveContainer,
   Legend,
-  Dot,
+
 } from "recharts";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 

@@ -5,6 +5,7 @@ interface Props {
 }
 
 export default function ProductAttributesTable({ attributes }: Props) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const entries = Object.entries(attributes).filter(([_, v]) => v !== undefined);
 
   return (
