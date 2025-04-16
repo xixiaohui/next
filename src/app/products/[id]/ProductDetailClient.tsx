@@ -9,7 +9,7 @@ import BrandListClient from "@/components/BrandListClient";
 import PriceRangeSelector from "@/components/product/PriceRangeSelector";
 import ProductListByPrice from "@/components/product/ProductListByPrice";
 
-import ProductCard from "@/components/product/ProductCard";
+import ProductCard, { Product } from "@/components/product/ProductCard";
 
 
 export default function ProductDetailClient({
@@ -17,14 +17,14 @@ export default function ProductDetailClient({
 }: {
   productId: string;
 }) {
-  const [product, setProduct] = useState<unknown>(null);
+  const [product, setProduct] = useState<Product>();
   const [loading, setLoading] = useState(true);
 
   const [range, setRange] = useState<[number, number]>([0, 1000]);
 
   useEffect(() => {
     getProductById(productId)
-      .then((data) => setProduct(data))
+      .then((data) => setProduct(data as Product))
       .catch((err) => console.error("Error loading product:", err))
       .finally(() => setLoading(false));
   }, [productId]);
