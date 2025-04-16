@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { getProductById } from "@/components/getProductById";
-import { Card, CardContent } from "@/components/ui/card";
+
 
 import BrandListClient from "@/components/BrandListClient";
 
@@ -17,7 +17,7 @@ export default function ProductDetailClient({
 }: {
   productId: string;
 }) {
-  const [product, setProduct] = useState<any>(null);
+  const [product, setProduct] = useState<unknown>(null);
   const [loading, setLoading] = useState(true);
 
   const [range, setRange] = useState<[number, number]>([0, 1000]);

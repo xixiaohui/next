@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 
 import BrandListClient from "@/components/BrandListClient";
 
-import BrandPriceChart from "@/components/charts/BrandPriceChart";
+
 
 import ProductFilterControls from "@/components/ProductFilterControls";
 import ProductListWithCatelog from "@/components/ProductListWithCatelog";
@@ -27,7 +27,7 @@ import {
   SelectItem,
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui";
+
 
 export default function PostsPage() {
   const router = useRouter(); // 新增

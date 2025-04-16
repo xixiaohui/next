@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import  CustomButton  from "@/components/CustomButton";
 
-import ProductLists from "@/components/ProductsLists";
+
 
 import DataTable from "@/components/DataTable";
 

@@ -40,7 +40,7 @@ export default function ProductListWithCatelog({ filters  }: { filters : Filters
         }
 
         const baseQuery = collection(db, "products");
-        let q = conditions.length
+        const q = conditions.length
           ? query(baseQuery, ...conditions)
           : query(baseQuery);
 

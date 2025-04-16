@@ -18,7 +18,7 @@ export default function BrandProductsClient({ brand }: { brand: string }) {
 
   const router = useRouter(); // 新增
 
-  const [products, setProducts] = useState<any[]>([]);
+  const [products, setProducts] = useState<unknown[]>([]);
   const [loading, setLoading] = useState(true);
 
 

@@ -4,7 +4,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import clsx from "clsx";
 
 interface Product {
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 interface Props {

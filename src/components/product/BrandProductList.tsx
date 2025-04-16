@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
-import ProductCard,{ Product } from "./ProductCard";
+import { Product } from "./ProductCard";
 
 
 interface Props {

@@ -13,7 +13,7 @@ export async function getProductByBrand(brandName: string) {
   const q = query(collection(db, "products"), where("brand", "==", brandName));
   const querySnapshot = await getDocs(q);
 
-  const products: any[] = [];
+  const products: unknown[] = [];
   querySnapshot.forEach((doc) => {
     products.push({ id: doc.id, ...doc.data() });
   });

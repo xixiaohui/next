@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { db } from "@/lib/firebase"; // 请确保 firebase 配置正确
-import { collection, getDocs, limit } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 
 const getCollectionFields = async (collectionName: string): Promise<string[]> => {
   try {
