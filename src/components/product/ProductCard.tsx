@@ -30,6 +30,7 @@ export interface Product {
   tds: {
     [key: string]: string;
   };
+  [key: string]: unknown;
 }
 
 interface Props {

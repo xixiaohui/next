@@ -3,9 +3,11 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import clsx from "clsx";
 
-interface Product {
-  [key: string]: unknown;
-}
+// interface Product {
+//   [key: string]: unknown;
+// }
+
+import { Product } from "@/components/product/ProductCard"
 
 interface Props {
   product1: Product;
@@ -34,10 +36,10 @@ export default function ProductComparisonTable({ product1, product2, fields, fie
               <TableRow key={field} className="even:bg-gray-50">
                 <TableCell className="font-medium text-gray-700">{fieldLabels[field] || field}</TableCell>
                 <TableCell className={clsx("whitespace-nowrap", isDiff && "text-red-600 font-semibold")}>
-                  {value1}
+                  {value1 as string}
                 </TableCell>
                 <TableCell className={clsx("whitespace-nowrap", isDiff && "text-red-600 font-semibold")}>
-                  {value2}
+                  {value2 as string}
                 </TableCell>
               </TableRow>
             );

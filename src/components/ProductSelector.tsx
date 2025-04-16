@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Product } from "./product/ProductCard";
 
 interface Props {
-  onSelect: (p1: Product | null, p2: Product | null) => void;
+  onSelect: (p1: Product , p2: Product) => void;
 }
 
 export default function ProductSelector({ onSelect }: Props) {
@@ -20,7 +20,7 @@ export default function ProductSelector({ onSelect }: Props) {
     const fetchData = async () => {
       const snapshot = await getDocs(collection(db, "products"));
       const list = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
-      setProducts(list);
+      setProducts(list as Product[]);
     };
     fetchData();
   }, []);
