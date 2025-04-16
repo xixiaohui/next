@@ -5,10 +5,10 @@ import ProductSelector from "./ProductSelector";
 import ProductComparisonTable from "./ProductComparisonTable";
 
 export default function ProductComparePage() {
-  const [p1, setP1] = useState<any | null>(null);
-  const [p2, setP2] = useState<any | null>(null);
+  const [p1, setP1] = useState<unknown | null>(null);
+  const [p2, setP2] = useState<unknown | null>(null);
 
-  const handleSelect = (product1: any, product2: any) => {
+  const handleSelect = (product1: unknown, product2: unknown) => {
     setP1(product1);
     setP2(product2);
   };
